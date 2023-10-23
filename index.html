@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic - Tac - Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icon.jpg">
+</head>
+<body>
+  <div id="container">
+    <div>
+      <h1>Tic - Tac - Toe</h1>
+    </div>
+    <div id="start">
+      <label for="name">
+        Enter Player Name: 
+      </label>
+      <input type="text" id='player'>
+      <button onclick="startGame()">START</button>
+    </div>
+    <div id="grid">
+      <div id="a" class='sq'></div>
+      <div id="b" class='sq'></div>
+      <div id="c" class='sq'></div>
+      <div id="d" class='sq'></div>
+      <div id="e" class='sq'></div>
+      <div id="f" class='sq'></div>
+      <div id="g" class='sq'></div>
+      <div id="h" class='sq'></div>
+      <div id="i" class='sq'></div>
+    </div>
+    <div id="results">
+      <p id="winner"></p>
+      <button onclick="clearBoard()">Play again</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34495e;
+  color: #e4f1fe; 
+}
+
+#start {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input {
+  margin: 20px 0;
+  background-color: #8dc6ff;
+  border: none;
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#start button {
+  background-color: #22313f;
+  color: #e4f1fe;
+  font-family: 'Lato', sans-serif;
+}
+
+#start button:hover {
+  cursor: pointer;
+}
+
+#grid {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  margin: 50px auto;
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity 3s;
+  position: relative;
+  z-index: 2;
+}
+
+#a {
+  width: 100px;
+  height: 100px;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#b {
+  height: 100px;
+  width: 100px;
+  border-bottom: 5px solid;
+  border-right: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#c {
+  height: 100px;
+  width: 100px;
+  border-bottom: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#d {
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#e {
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#f {
+  height: 100px;
+  width: 100px;
+  border-bottom: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#g {
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#h {
+  border-right: 5px solid;
+  background: rgba(0, 0, 0, .5)
+}
+
+#i {
+  background: rgba(0, 0, 0, .5)
+}
+
+#results {
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  padding: 10px;
+  z-index: 1;
+  transition: opacity 2s;
+  color: white;
+}
+
+#results button {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #22313f; 
+  color: #e4f1fe; 
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+#results button:hover {
+  cursor: pointer;
+}
